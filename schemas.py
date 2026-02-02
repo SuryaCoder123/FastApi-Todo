@@ -10,7 +10,7 @@ class TodoCreate(TodoBase):
 class TodoUpdate(BaseModel):
     title: str | None=None
     description: str | None=None
-    completed: bool = False
+    completed: bool | None=None
 
 class TodoDelete(BaseModel):
     id: int
